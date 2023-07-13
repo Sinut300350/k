@@ -20,7 +20,7 @@ app.use(cors(
 
 app.get('/', async (req,res) => {
   res.status(200).send({
-    massage : 'hello' 
+    massage : 'hello world' 
   })
 })
 app.post("/", async (req, res) => {
