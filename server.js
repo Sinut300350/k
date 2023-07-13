@@ -5,7 +5,7 @@ import cors from "cors";
 
 const configuration = new Configuration({
   organization: "org-PKZjFF4OSFttPs4tQTkXrqDx",
-  apiKey: "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",
+  apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -18,6 +18,11 @@ app.use(cors(
   {origin:"*"}
 ));
 
+app.get('/', async (req,res) => {
+  res.status(200).send({
+    massage : 'hello' 
+  })
+})
 app.post("/", async (req, res) => {
   const { messages } = req.body;
 

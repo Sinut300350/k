@@ -110,6 +110,7 @@ function bar() {
       })
         .then((res) => res.json())
         .then((data1) => {
+          console.log("success")
           generate.style.display = "block";
           generate.addEventListener("click", function() {
           const situation = document.getElementById("story");
