@@ -99,7 +99,7 @@ function bar() {
       const messages = [];
       const newMessage = { role: "user", content: `make story about all of this ${key} in 5 line and enter this line and explain how it affects health in 5 line (the main character is word "you")`};
       messages.push(newMessage);
-      fetch("http://localhost:3000/", {
+      fetch("https://ncds-v0-0-1.onrender.com/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
